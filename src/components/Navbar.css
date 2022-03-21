@@ -1,0 +1,60 @@
+:root {
+    --height: 57px;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    border-bottom: 0.1px solid lightgray;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    height: var(--height);
+    background-color: white;
+}
+
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+}
+
+.header_search {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    height: 35px;
+    color: gray;
+    background-color: #eef3f8;
+}
+
+.logo {
+    object-fit: contain;
+    height: 45px;
+}
+
+.header_search > input {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.header_right {
+    display: flex;
+}
+
+.main_buttons, .extra_buttons {
+    display: flex;
+    height: 100%;
+}
+
+.divider {
+    width: 1px;
+    background-color: lightgray;
+    height: var(--height);
+}
