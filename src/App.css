@@ -1,9 +1,9 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  height: 200vh;
 }
 
 body {
-  height: 200vh;
-  background-color: #fff5f0;
+  background-color: #fffbf7;
 }

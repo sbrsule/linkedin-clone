@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import "./NavButton.css";
 import Avatar from "@mui/material/Avatar";
 
-export default function NavButton({Icon, title, avatar, isActive}) {
+export default function NavButton({Icon, title, avatar, selected, changeId, id}) {
+    const changeFunction = () => {
+        changeId(id);
+    }
     return (   
-        <div className={isActive ? "active nav_button" : "nav_button"}>
+        <div className={(selected === id) ? "active nav_button" : "nav_button"} onClick={changeFunction}>
             {Icon && <Icon className="nav_button_icon"></Icon>}
             {avatar &&(
                 <Avatar className="nav_button_icon" src={avatar}/>
