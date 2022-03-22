@@ -1,0 +1,10 @@
+.feed {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.feed_container {
+    width: 60vw;
+    padding-top: 30px;
+}

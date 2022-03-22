@@ -6,7 +6,7 @@
     justify-content: center;
     border-bottom: 0.1px solid lightgray;
     position: sticky;
-    width: 100%;
+    width: 100vw;
     top: 0;
     z-index: 999;
     height: var(--height);
@@ -34,6 +34,12 @@
     height: 35px;
     color: gray;
     background-color: #eef3f8;
+    transition: transform ease-out 0.3s;
+}
+
+.header_search:active {
+    transform-origin: left;
+    transform: scaleX(1.7);
 }
 
 .logo {
